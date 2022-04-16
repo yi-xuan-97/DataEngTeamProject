@@ -16,5 +16,6 @@ def getDataByDate(month, day):
     formatdate = datetime(2022, month, day).strftime('%Y-%m-%d')
     url = f'http://{serverip}/data/{formatdate}.json'
     data = getJsonFromURL(url)
-    print(data)
-# getDataByDate(4,11)
+    return data
+# data = getDataByDate(4,11)
+# print(data)
