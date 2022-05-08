@@ -1,0 +1,1 @@
+wget -r -np -nH -R index.html http://35.185.236.55/data/storage/
