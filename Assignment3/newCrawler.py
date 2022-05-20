@@ -2,6 +2,8 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from lxml import etree
+from datetime import date
+today = str(date.today())
 
 pageurl = 'http://www.psudataeng.com:8000/getStopEvents/'
 s = requests.Session()
@@ -21,4 +23,4 @@ def tableformtodict(table):
 for table in allTable:
     tableformtodict(table)
 df = pd.DataFrame(records)
-df.to_csv('data.csv', index=False)
+df.to_csv(f'{today}.csv', index=False)
