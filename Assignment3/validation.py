@@ -1,6 +1,7 @@
 import pandas as pd
 
-data = pd.read_csv('data.csv')
+filename = '2022-05-20.csv'
+data = pd.read_csv(filename)
 data['stop_time'] =  data['stop_time'].fillna(method='ffill')
 data['x_coordinate'] =  data['x_coordinate'].fillna(method='ffill')
 data['y_coordinate'] =  data['y_coordinate'].fillna(method='ffill')
@@ -21,4 +22,4 @@ data['leave'] = data['leave'].dt.time
 data['stop'] = data['stop'].dt.time
 data['arrive'] = data['arrive'].dt.time
 
-data.to_csv('data.csv',index=False)
+data.to_csv(filename,index=False)
