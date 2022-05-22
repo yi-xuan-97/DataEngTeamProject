@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-path= '/Users/zhengmao/Documents/Github/DataEngTeamProject/Assignment3/cars_record/'
+path= '/Users/yixuanfeng/Documents/Github/DataEngTeamProject/Assignment3/cars_record/'
 filelist = os.listdir(path)
 def validCarsRecord(filename):
     data = pd.read_csv(filename)
