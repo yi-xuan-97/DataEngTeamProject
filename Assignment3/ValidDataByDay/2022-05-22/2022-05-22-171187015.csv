@@ -1,0 +1,3 @@
+vehicle_number,leave_time,train,route_number,direction,stop_time,arrive_time,location_id,estimated_load,train_mileage,pattern_distance,location_distance,x_coordinate,y_coordinate,data_source,schedule_status,leave,stop,arrive
+2291,33095,6002,60,1,33120.0,33095,906,2,0.0,0.0,10.982621,-122.67051166666668,45.626221666666666,2,5,09:11:35,09:12:00,09:11:35
+2291,33309,6002,60,1,33300.0,33269,1132,3,0.2902,0.3275,12.031235,-122.67043333333334,45.63051,2,4,09:15:09,09:15:00,09:14:29
